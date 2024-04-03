@@ -1,0 +1,22 @@
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+p {
+  line-height: 1.8;
+  border: 1px solid #f5f5f5;
+  padding: 10px 16px;
+}
+
+/* Style for the selected text */
+.text-box-1::selection {
+  color: #c10606;
+  background-color: #e5e530;
+}
+
+/* Style for the selected text in the first paragraph */
+.text-box-2::selection {
+  color: #585858;
+  background-color: #9fdd86;
+}

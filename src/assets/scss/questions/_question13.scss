@@ -1,0 +1,22 @@
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  background: #ddd;
+
+  div {
+    background: #ccc;
+    padding: 20px;
+  }
+
+  & > *:empty {
+    display: none;
+  }
+
+  &:has(> *:empty) {
+    background-color: #333;
+  }
+}

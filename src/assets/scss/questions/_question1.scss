@@ -1,0 +1,21 @@
+.tag {
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid #222;
+
+  &-regular {
+    border-radius: 20px;
+  }
+
+  &-high {
+    background: Tomato;
+  }
+
+  &-mid {
+    background: Yellow;
+  }
+
+  &-low {
+    background: LimeGreen;
+  }
+}

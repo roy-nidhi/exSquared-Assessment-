@@ -1,0 +1,37 @@
+.company {
+  &_epm {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    justify-content: center;
+  }
+
+  &_card {
+    text-align: center;
+    img {
+      border-radius: 50%;
+      width: 250px;
+      height: 250px;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+
+    &_caption-name {
+      margin: 20px 0 10px 0;
+    }
+
+    &:nth-child(3) {
+      grid-row-start: 2;
+      grid-column: 1/2;
+    }
+
+    &:nth-child(4) {
+      grid-row-start: 1;
+      grid-column: 2/3;
+    }
+    &:nth-child(6) {
+      grid-row-start: 1;
+      grid-column: 1/2;
+    }
+  }
+}
